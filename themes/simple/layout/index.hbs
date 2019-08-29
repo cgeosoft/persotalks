@@ -1,0 +1,24 @@
+<div class="container" style="max-width:600px;">
+  <h1 class="display-4">Lorem</h1>
+  <div class="card">
+    <div class="card-body">
+      {{#each site.data.persons}}
+      <div class="media border-bottom border-light pb-4 mb-4">
+        <div class="d-flex flex-column mr-3">
+          <img src="{{avatar}}" class="img-thumbnail mb-2">
+          <span class="badge badge-secondary badge-block p-2">{{votes}} votes</span>
+        </div>
+        <div class="media-body">
+          <h5>{{name}} <small class="text-muted">{{category}}</small></h5>
+          <ul class="list-inline mb-1">
+            {{#each tags}}
+            <li class="list-inline-item"><span class="badge badge-primary">{{this}}</span></li>
+            {{/each}}
+          </ul>
+          {{description}}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
