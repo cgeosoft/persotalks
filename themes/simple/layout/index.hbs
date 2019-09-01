@@ -1,24 +1,61 @@
-<div class="container" style="max-width:600px;">
-  <h1 class="display-4">Lorem</h1>
-  <div class="card">
-    <div class="card-body">
-      {{#each site.data.persons}}
-      <div class="media border-bottom border-light pb-4 mb-4">
-        <div class="d-flex flex-column mr-3">
-          <img src="{{avatar}}" class="img-thumbnail mb-2">
-          <span class="badge badge-secondary badge-block p-2">{{votes}} votes</span>
+<div class="bg-dark text-white p-5 mb-4">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h1 class="display-1">συνάντηση</h1>
+            <div id="countdown" class="display-3" data-date="{{site.data.meeting.date}}">--:--:--</div>
+            <p>{{dateformat site.data.meeting.date}}</p>
+            <p><a class="text-white" href="{{site.data.meeting.location.link}}">
+                    <div class="border rounded overflow-hidden d-flex align-items-center"
+                        style="min-height:150px;height:150px">
+                        <img class="img-fluid" src="{{site.data.meeting.location.photo}}">
+                    </div>
+                    {{site.data.meeting.location.label}} - {{site.data.meeting.location.link}}
+                </a>
+            </p>
+            <p>παρουσιάζει: {{site.data.meeting.presenter}}</p>
         </div>
-        <div class="media-body">
-          <h5>{{name}} <small class="text-muted">{{category}}</small></h5>
-          <ul class="list-inline mb-1">
-            {{#each tags}}
-            <li class="list-inline-item"><span class="badge badge-primary">{{this}}</span></li>
-            {{/each}}
-          </ul>
-          {{description}}
+        <hr class="border-secondary">
+        <div class="d-flex">
+            <div class="border rounded mr-4 overflow-hidden d-flex align-items-center"
+                style="min-width:150px;min-height:150px;width:150px;height:150px">
+                <img src="{{site.data.meeting.person.avatar}}" class="img-fluid">
+            </div>
+            <div>
+                <h1>{{site.data.meeting.person.name}}</h1>
+                <ul class="list-inline mb-3">
+                    {{#each site.data.meeting.person.tags}}
+                    <li class="list-inline-item"><span class="badge badge-primary">{{this}}</span></li>
+                    {{/each}}
+                </ul>
+                <p style="opacity: .8">{{site.data.meeting.person.description}}</p>
+            </div>
         </div>
-      </div>
-      {{/each}}
     </div>
-  </div>
 </div>
+
+<div class="container">
+    <h2>Κατάταξη</h2>
+    <div class="card">
+        <div class="card-body">
+            {{#each site.data.persons}}
+            <div class="media border-bottom border-light pb-4 mb-4">
+                <div class="d-flex flex-column mr-3">
+                    <img src="{{avatar}}" class="img-thumbnail mb-2">
+                    <span class="badge badge-secondary badge-block p-2">{{votes}} votes</span>
+                </div>
+                <div class="media-body">
+                    <h5>{{name}} <small class="text-muted">{{category}}</small></h5>
+                    <ul class="list-inline mb-2">
+                        {{#each tags}}
+                        <li class="list-inline-item"><span class="badge badge-primary">{{this}}</span></li>
+                        {{/each}}
+                    </ul>
+                    {{description}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<script src="/scripts/script.js"></script>

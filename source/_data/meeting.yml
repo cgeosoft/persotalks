@@ -1,0 +1,14 @@
+date: 2019-09-14T17:00:00+3:00
+presenter: Χρήστος
+person:
+  name: William James Sidis
+  tags: [μαθηματικά, φυσική, αστρονομία]
+  avatar: https://upload.wikimedia.org/wikipedia/commons/d/d3/William_James_Sidis_1914.jpg
+  description: 
+    O William James Sidis ήταν ένα αμερικανικό παιδί με εξαιρετικά μαθηματικά και γλωσσικά προσόντα. 
+    Είναι αξιοσημείωτος για το βιβλίο του 1920 The Animate και το άψυχο, στο οποίο δηλώνει την ύπαρξη της σκοτεινής ύλης, 
+    της εντροπίας και της προέλευσης της ζωής στο πλαίσιο της θερμοδυναμικής.
+location:
+  label: Γιορτή
+  photo: https://www.giortirestaurant.gr/wp-content/uploads/2014/05/discover-us-900x600.jpg
+  link: https://goo.gl/maps/ygUHBBT9pA8tQf3V8

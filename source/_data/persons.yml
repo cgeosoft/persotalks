@@ -5,8 +5,9 @@
     - writer
   votes: 112
   description: 
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil qui reprehenderit vel voluptatem aliquam doloremque iure
-    labore obcaecati quam autem incidunt enim, officia nulla molestias recusandae dicta dignissimos libero exercitationem?
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+    Nihil qui reprehenderit vel voluptatem aliquam doloremque
+    
 - name: Jeremiah Hernandez
   avatar: https://randomuser.me/api/portraits/med/men/64.jpg
   tags:
@@ -14,5 +15,5 @@
     - architect
   votes: 50
   description: 
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil qui reprehenderit vel voluptatem aliquam doloremque iure
-    labore obcaecati quam autem incidunt enim, officia nulla molestias recusandae dicta dignissimos libero exercitationem?
+    Labore obcaecati quam autem incidunt enim, officia nulla 
+    molestias recusandae dicta dignissimos libero exercitationem?
